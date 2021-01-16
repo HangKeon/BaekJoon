@@ -783,5 +783,17 @@
     <ClCompile Include="2208(보석 줍기).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11066(파일 합치기).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1149(RGB거리).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2565%28전깃줄%29 - 정올 2007 초등 4번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1912(연속합).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
