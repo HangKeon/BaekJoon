@@ -795,5 +795,11 @@
     <ClCompile Include="1912(연속합).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1049(기타줄).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2437(저울).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
