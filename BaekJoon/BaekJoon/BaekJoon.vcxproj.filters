@@ -801,5 +801,17 @@
     <ClCompile Include="2437(저울).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1333(부재중 전화).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1931(회의실 배정).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2217(로프).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1744(수 묶기).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
