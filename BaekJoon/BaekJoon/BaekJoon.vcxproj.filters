@@ -738,9 +738,6 @@
     <ClCompile Include="20186%28수 고르기%29 - 2020 정올 2차 초등부 1번.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="14501(퇴사).cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="2548(대표 자연수) - 정올 2009 초등부1번.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -811,6 +808,36 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="1744(수 묶기).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2632(피자판매).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2615(오목).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="21756(지우개) - 2021 정올 초등부 1번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="21757(나누기) - 2021 정올 초등부 2번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="21758(꿀 따기) - 2021 정올 중등 1번.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1965(상자넣기).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="12865(평범한 배낭).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2512(예산).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2776(암기왕).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2798(블랙잭).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
