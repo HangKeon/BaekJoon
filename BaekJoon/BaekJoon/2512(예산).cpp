@@ -27,7 +27,7 @@ int main()
 	{
 		mid = (low + high) / 2;
 
-		long long sum = 0;						//min(arr,mid)의 누적합 -> m이하!
+		int sum = 0;							//min(arr,mid)의 누적합 -> m이하!
 
 		for (int i = 0; i < n; i++)
 			sum += min(arr[i], mid);

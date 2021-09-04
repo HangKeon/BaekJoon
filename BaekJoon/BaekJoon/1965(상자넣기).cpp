@@ -16,7 +16,7 @@ int main()
 
 	for (int i = 1; i < n; i++)
 	{
-		for (int j = 0; j < n; j++)
+		for (int j = 0; j < i; j++)
 			if (arr[i] > arr[j])			//앞의 상자 크기(arr[j])보다 뒤의 상자 크기(arr[i])가 크다면
 				dp[i] = max(dp[i], dp[j]);
 

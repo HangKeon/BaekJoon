@@ -2,7 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-int dp[10001];               //포도주의 누적 합의 최댓값
+int dp[10001];                //포도주의 누적 합의 최댓값
 int arr[10001];               //포도주의 양
 
 int main()

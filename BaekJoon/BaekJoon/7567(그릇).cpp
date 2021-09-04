@@ -22,7 +22,5 @@ int main()
 	cout << height << endl;
 
 
-
-
 	return 0;
 }
