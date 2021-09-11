@@ -879,5 +879,23 @@
     <ClCompile Include="7568(덩치).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2563(색종이).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2669(직사각형 네 개의 합집합의 면적 구하기).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10163(색종이).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2231(분해합).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="10801(카드 게임).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="2511(카드놀이).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
