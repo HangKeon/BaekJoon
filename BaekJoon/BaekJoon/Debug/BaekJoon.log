@@ -1,3 +1,4 @@
-﻿  1806(부분합).cpp
-d:\baekjoon\baekjoon\baekjoon\1806(부분합).cpp(11): warning C4244: '초기화 중': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  2551(두 대표 자연수) - 정올 2009 중등부 1번.cpp
+d:\baekjoon\baekjoon\baekjoon\2551(두 대표 자연수) - 정올 2009 중등부 1번.cpp(14): warning C4244: '초기화 중': 'double'에서 '__int64'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+d:\baekjoon\baekjoon\baekjoon\2551(두 대표 자연수) - 정올 2009 중등부 1번.cpp(52): warning C4244: '=': 'double'에서 '__int64'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   BaekJoon.vcxproj -> D:\Baekjoon\BaekJoon\Debug\BaekJoon.exe
