@@ -1,51 +1,76 @@
 #include <iostream>
-#include <algorithm>
+#include <vector>
+#include <queue>
 using namespace std;
 
-#define INF 1e9						//무한을 의미하는 값으로 10억을 설정
+int n = 7;								//정점 개수
+int arr[8];								//진입 차수 개수
+vector<int> v[8];						//위상 정렬 그래프
 
-int n, m;							//n : 노드의 개수, m : 간선의 개수
-int arr[501][501];					//그래프(플로이드 와샬은 노드가 500개를 넘지 않는 경우 사용!)
-									//왜냐하면 3중 반목문을 사용하기 때문!
+void topological();						//함수 프로토타입
 
 int main()
 {
-	cin >> n >> m;
+	v[1].push_back(2);					//1 -> 2
+	arr[2]++;							//정점 2의 진입 차수를 1 증가
 
-	for (int i = 0; i < 501; i++)			//그래프를 모두 무한으로 초기화
-		fill(arr[i], arr[i] + 501, INF);
+	v[1].push_back(5);					//1 -> 5
+	arr[5]++;							//정점 5의 진입 차수를 1 증가
 
-	for (int i = 1; i <= n; i++)			//자기 자신에서 자기 자신으로 가는 경우 0으로 초기화
-		for (int j = 1; j <= n; j++)
-			if (i == j)
-				arr[i][j] = 0;
+	v[2].push_back(3);					//2 -> 3
+	arr[3]++;							//정점 3의 진입 차수를 1 증가
 
-	for (int i = 0; i < m; i++)				//각 간선에 대한 정보를 입력 받아 그 값으로 초기화
-	{
-		int a, b, c;						//a->b로 가는 가중치를 c라 한다
+	v[3].push_back(4);					//3 -> 4
+	arr[4]++;							//정점 4의 진입 차수를 1 증가
 
-		cin >> a >> b >> c;
+	v[4].push_back(6);					//4 -> 6
+	arr[6]++;							//정점 6의 진입 차수를 1 증가
 
-		arr[a][b] = c;
-	}
+	v[5].push_back(6);					//5 -> 6
+	arr[6]++;							//정점 6의 진입 차수를 1 증가
 
-	//점화식에 따라 플로이드 와샬 알고리즘 수행
-	for (int k = 1; k <= n; k++)					//경유하는 곳				
-		for (int a = 1; a <= n; a++)				//출발점
-			for (int b = 1; b <= n; b++)			//도착점
-				arr[a][b] = min(arr[a][b], arr[a][k] + arr[k][b]);
+	v[6].push_back(7);					//6 -> 7
+	arr[7]++;							//정점 7의 진입 차수를 1 증가
 
-
-	for (int a = 1; a <= n; a++)					//수행된 결과 출력
-	{
-		for (int b = 1; b <= n; b++)
-			if (arr[a][b] == INF)					//도달할 수 없는 경우
-				cout << "무한" << ' ';
-			else									//도달할 수 있는 경우
-				cout << arr[a][b] << ' ';
-
-		cout << endl;
-	}
+	topological();
 
 	return 0;
+}
+
+void topological()
+{
+	int result[8];						//큐에서 꺼낸 정점을 순서대로 저장(위상 정렬 순서)
+	queue<int> q;						//진입 차수가 0인 정점을 넣을 큐
+
+	for (int i = 1; i <= n; i++)		//진입 차수가 0인 정점을 큐에 삽입
+		if (arr[i] == 0)
+			q.push(i);
+
+	for (int i = 1; i <= n; i++)		//정렬이 완전히 수행되려면 정확히 n개의 정점을 방문
+	{
+		if (q.empty())					//n개를 방문하기 전에 큐가 비어버리면 사이클 발생한 것
+		{
+			cout << "사이클이 발생했습니다." << endl;
+			return;
+		}
+
+		int x = q.front();				//큐에서 꺼낼 정점을 미리 저장
+
+		q.pop();						//큐에서 정점을 꺼냄
+
+		result[i] = x;					//꺼낸 정점을 순서대로 저장
+
+		for (int j = 0; j < v[x].size(); j++)	//정점x와 연결된 정점을 모두 살펴본다
+		{
+			int y = v[x][j];					//정점x가 가진 정점을 y에 저장
+			
+			if (--arr[y] == 0)					//정점y의 진입차수 개수를 하나 뺐을 때 개수가 0이면 q에 삽입
+				q.push(y);
+		}
+	}
+
+	for (int i = 1; i <= n; i++)				//위상 정렬 결과 출력
+		cout << result[i] << ' ';
+
+	cout << endl;
 }
